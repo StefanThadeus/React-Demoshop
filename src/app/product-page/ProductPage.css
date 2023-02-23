@@ -1,0 +1,137 @@
+.product-page {
+    /*--color-subtitle: red;*/
+}
+
+.product-page h1 {
+    font-size: 3.5rem;
+    font-weight: initial;
+    font-family: var(--font-cursive);
+    margin: 0 0;
+}
+
+.product-page h2 {
+    color: var(--color-subtitle);
+    font-family: var(--font-cursive);
+    font-size: 2rem;
+    font-weight: initial;
+    margin: 0 0;
+    text-align: left;
+}
+
+.product-page input, textarea {
+    font-size: 1rem;
+    font-family: var(--font-simple);
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    outline-color: #2EE59D;
+    color: #555;
+    box-shadow: inset 2px 2px 2px #cbced1, inset -8px -8px 8px #ffffff;
+    vertical-align: center;
+    width: 90%;
+    resize: none;
+}
+
+.product-page img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.product-page select {
+    font-family: var(--font-simple);
+    width: 98%;
+}
+
+.product-main-container {
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-template-rows: 20% auto;
+    grid-gap: 10px 20px;
+
+    border-radius: 20px;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 1.2rem;
+
+    background: linear-gradient(145deg, #dddddd, #f6f6f6);
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+
+    width:900px;
+    height:770px;
+
+    /* The magic centering code */
+    margin:auto;
+    position:absolute;
+    top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+    left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+    /* Prevent div from overflowing main window */
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}
+
+.product-grid-item-span-max {
+    grid-column: 1 / span 2;
+}
+
+.product-left-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 30px 30px 30px 30px 30px 110px 190px 30px 30px;
+    gap: 12px 5px;
+    font-size: 18px;
+    text-align: right;
+    align-items: center;
+}
+
+.product-right-grid {
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 51% auto 9% 8%;
+    text-align: right;
+    gap: 12px 5px;
+}
+
+.top-align {
+    align-self: start;
+}
+
+.product-page button {
+    width: 100%;
+}
+
+#picture-upload {
+    width: 380px;
+}
+
+.product-spinner {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    border-radius: 20px;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 1.2rem;
+
+    background: linear-gradient(145deg, #dddddd, #f6f6f6);
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+
+    width:300px;
+    height:300px;
+
+    /* The magic centering code */
+    margin:auto;
+    position:absolute;
+    top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+    left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+    /* Prevent div from overflowing main window */
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}

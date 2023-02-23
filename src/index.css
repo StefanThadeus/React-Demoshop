@@ -1,0 +1,63 @@
+:root {
+    --color-subtitle: rgba(25, 214, 143, 1) !important;
+    --color-error: red !important;
+    --font-cursive: 'Pacifico', cursive;
+    --font-simple: 'Domine', serif;
+}
+
+body {
+    background-image: url("../public/images/background.jpg");
+    background-size: cover;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.selectable {
+    transition-duration: 100ms;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.selectable:hover {
+    transition-duration: 100ms;
+    font-size: 1.3rem;
+    color: #19D68F;
+}
+
+.selected {
+    color: #19D68F;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #AAA;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+::selection {
+    background: #98FAD4;
+}

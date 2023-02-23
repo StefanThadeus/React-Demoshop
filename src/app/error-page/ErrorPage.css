@@ -1,0 +1,55 @@
+.error-page {
+    /*--color-subtitle: red;*/
+}
+
+.error-page h1 {
+    font-size: 4.5rem;
+    font-weight: initial;
+    font-family: var(--font-cursive);
+    margin: 0 0;
+}
+
+.error-page h2 {
+    font-family: var(--font-cursive);
+    font-size: 2rem;
+    font-weight: initial;
+    margin: 0 0;
+}
+
+.error-page h3 {
+    color: var(--color-error);
+    font-family: var(--font-simple);
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: initial;
+    margin: 0 0;
+}
+
+.error-page-main-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 37% 29% 20% auto;
+
+    border-radius: 20px;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 1.2rem;
+
+    background: linear-gradient(145deg, #dddddd, #f6f6f6);
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+
+    width:430px;
+    height:370px;
+
+    /* The magic centering code */
+    margin:auto;
+    position:absolute;
+    top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+    left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+    /* Prevent div from overflowing main window */
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}

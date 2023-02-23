@@ -1,0 +1,93 @@
+.login-page {
+    /*--color-subtitle: red;*/
+}
+
+.login-page h1 {
+    font-size: 4.5rem;
+    font-weight: initial;
+    font-family: var(--font-cursive);
+    margin: 0 0;
+}
+
+.login-page h2 {
+    font-family: var(--font-cursive);
+    font-size: 2rem;
+    font-weight: initial;
+    margin: 0 0;
+}
+
+.login-page input {
+    font-size: 1rem;
+    font-family: var(--font-simple);
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    outline-color: #2EE59D;
+    color: #555;
+    box-shadow: inset 2px 2px 2px #cbced1, inset -8px -8px 8px #ffffff;
+    vertical-align: center;
+}
+
+.login-main-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    border-radius: 20px;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+
+    background: linear-gradient(145deg, #dddddd, #f6f6f6);
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+
+    width: 450px;
+    height: 450px;
+
+    /* The magic centering code */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0; /* Aligns Vertically - Remove for Horizontal Only */
+    left: 0;
+    right: 0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+    /* Prevent div from overflowing main window */
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.login-text-box-area{
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-template-rows: 50% 50%;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    text-align: right;
+    align-items: center;
+}
+
+.login-button-area{
+    display: grid;
+    grid-template-columns: auto 40%;
+    text-align: left;
+    column-gap: 10px;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.login-label {
+    font-size: 1.2rem;
+    font-family: var(--font-simple);
+}
+
+.login-grid-item-span-max {
+    grid-column: 1 / span 2;
+}
+
+.login-form-input-area {
+    width: 85%;
+}
